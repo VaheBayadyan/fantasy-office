@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b19">
+  <title>Fantasy Office — Yahoo Basketball</title>
+  <meta name="description" content="A personal command center for Yahoo Fantasy Basketball category matchups.">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">◈</span><span>FANTASY<span class="brand-light">OFFICE</span></span></div>
+      <div class="top-actions"><span class="live-dot"></span><span class="top-label">YAHOO BASKETBALL</span><button id="refresh" class="icon-button" title="Refresh data" aria-label="Refresh data">↻</button></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR MATCHUP INTELLIGENCE</div>
+        <div class="hero-row"><div><h1>Run your <em>league.</em></h1><p>See the week ahead, find category edges, and make your next move with intent.</p></div><div class="hero-graphic" aria-hidden="true"><span class="orbit one"></span><span class="orbit two"></span><span class="orbit three"></span><span class="ball">✦</span></div></div>
+      </section>
+
+      <section id="status" class="status" role="status">Loading your dashboard…</section>
+      <section id="overview" class="overview" hidden></section>
+      <section id="leagues" class="leagues" aria-label="Your leagues"></section>
+      <footer><span>FANTASY OFFICE / PERSONAL SCOUTING DESK</span><span>READ ONLY · DATA FROM YAHOO FANTASY</span></footer>
+    </main>
+  </div>
+</body>
+</html>
